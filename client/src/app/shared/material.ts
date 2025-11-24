@@ -3,6 +3,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatMenuModule } from '@angular/material/menu';
 
 export const materialModules = [
   MatButtonModule,
@@ -10,4 +12,6 @@ export const materialModules = [
   MatIconModule,
   MatInputModule,
   MatToolbarModule,
+  MatDividerModule,
+  MatMenuModule,
 ];

@@ -1,5 +1,21 @@
 <mat-toolbar>
-    <mat-icon>menu</mat-icon>
-    <span>MEAN Stack Tutorial</span>
+    <div>
+        <mat-icon [matMenuTriggerFor]="appMenu">menu</mat-icon> &nbsp;
+        <mat-icon routerLink="/">home</mat-icon>
+    </div>
+    <span>MEAN Stack Tutorial</span> 
     <mat-icon>help</mat-icon>
 </mat-toolbar>
+
+<mat-menu #appMenu="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="developmentEnvironmentMenu">Getting started</button>
+    <button mat-menu-item [matMenuTriggerFor]="angularMenu">Angular</button>
+</mat-menu>
+
+<mat-menu #developmentEnvironmentMenu="matMenu">
+    <button mat-menu-item routerLink="/development-environment/set-up">Set Up</button>
+</mat-menu>
+
+<mat-menu #angularMenu="matMenu">
+    <button mat-menu-item routerLink="/angular/set-up">Set Up</button>
+</mat-menu>
