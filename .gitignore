@@ -1,0 +1,54 @@
+# ==========================
+# Project-wide ignores
+# ==========================
+# Node modules (common for both client & server)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Angular client (project/client)
+# ==========================
+/client/dist/
+/client/out-tsc/
+/client/.angular/
+/client/.vscode/
+/client/.idea/
+/client/.cache/
+/client/.env
+/client/**/*.tsbuildinfo
+/client/.sass-cache
+
+# Angular build artifacts
+/client/**/*.js.map
+/client/**/*.js
+/client/**/*.css.map
+
+# ==========================
+# Node/Express server (project/server)
+# ==========================
+/server/dist/
+# Angular build directory (if server also serves Angular app)
+/server/angular/
+/server/.vscode/
+/server/.idea/
+/server/.env
+/server/**/*.tsbuildinfo
