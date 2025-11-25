@@ -1,4 +1,4 @@
-Use <kbd><i>Ctrl</i></kbd> + <kbd><i>Shift</i></kbd> + <kbd><i>p</i></kbd> and select 'Preferences: Open User Settings (JSON)'. Paste code below to your user preferences. 
+Use <kbd><i>Ctrl</i></kbd> + <kbd><i>Shift</i></kbd> + <kbd><i>p</i></kbd> and select 'Preferences: Open User Settings (JSON)'. Paste code below. 
 
 ```json
 {

@@ -6,6 +6,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 export const materialModules = [
   MatButtonModule,
@@ -16,4 +17,5 @@ export const materialModules = [
   MatDividerModule,
   MatMenuModule,
   MatGridListModule,
+  MatExpansionModule,
 ];
