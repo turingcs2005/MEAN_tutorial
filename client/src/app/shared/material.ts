@@ -5,6 +5,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 export const materialModules = [
   MatButtonModule,
@@ -14,4 +15,5 @@ export const materialModules = [
   MatToolbarModule,
   MatDividerModule,
   MatMenuModule,
+  MatGridListModule,
 ];
