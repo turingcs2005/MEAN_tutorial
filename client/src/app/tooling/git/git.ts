@@ -2,12 +2,12 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { toolsModules } from '../../shared/tools';
 
 @Component({
-  selector: 'app-nvm',
+  selector: 'app-git',
   imports: [...toolsModules],
-  templateUrl: './nvm.html',
-  styleUrl: './nvm.scss',
+  templateUrl: './git.html',
+  styleUrl: './git.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Nvm {
+export class Git {
 
 }
