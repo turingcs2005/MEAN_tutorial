@@ -9,6 +9,7 @@
 
 <mat-menu #appMenu="matMenu">
     <button mat-menu-item [matMenuTriggerFor]="developmentEnvironmentMenu">Getting started</button>
+    <button mat-menu-item [matMenuTriggerFor]="toolingMenu">Tooling</button>
     <button mat-menu-item [matMenuTriggerFor]="angularMenu">Angular</button>
 </mat-menu>
 
@@ -18,6 +19,13 @@
     <button mat-menu-item routerLink="/development-environment/npm">Key npm commands</button>
 </mat-menu>
 
+<mat-menu #toolingMenu="matMenu">
+    <button mat-menu-item routerLink="/tooling/ai-assistance">AI Assistance</button>
+    <button mat-menu-item routerLink="/tooling/vim">Vim</button>
+    <button mat-menu-item routerLink="/tooling/"></button>
+    <button mat-menu-item routerLink="/tooling/"></button>
+</mat-menu>
+    
 <mat-menu #angularMenu="matMenu">
     <button mat-menu-item routerLink="/angular/set-up">Setup</button>
 </mat-menu>

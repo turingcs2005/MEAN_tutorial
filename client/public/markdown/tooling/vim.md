@@ -4,32 +4,38 @@
 
 ___
 
-### Visual Studio Code Vim extension
+<details>
+	<summary>1. Visual Studio Code Vim extension</summary>
+Disable Vim's keyboard shortcuts to avoid conflict with Visual Studo Code's shortcuts. For example: <kbd><i>ctrl</i></kbd>  <kbd><i>k</i></kbd> &rarr; <kbd><i>z</i></kbd> in Visual Studio Code toggles zen mode. <kbd><i>Ctrl </i></kbd> <kbd><i>k</i></kbd> is for entering digraphs (special characters). Without disabling Vim keyboard shortcut, you won't be able to use Visual Studio Code keyboard shortcut to toggle zen mode, because <kbd><i>Ctrl</i></kbd>  <kbd><i>k</i></kbd> is intercepted by Vim. To disable certain Vim keyboard shortcuts, add the following to your Visual Studio Code settings:
 
-Disable Vim's keyboard shortcuts to avoid conflict with Visual Studo Code's shortcuts. For example: <kbd><i>ctrl</i></kbd>  <kbd><i>k</i></kbd> &rarr; <kbd><i>z</i></kbd> in Visual Studio Code toggles zen mode. <kbd><i>Ctrl </i></kbd> <kbd><i>k</i></kbd> is for entering digraphs (special characters). Without disabling Vim keyboard shortcut, you won't be able to use Visual Studio Code keyboard shortcut to toggle zen mode, because <kbd><i>Ctrl</i></kbd>  <kbd><i>k</i></kbd> is intercepted by Vim. To disable <kbd><i>Ctrl</i></kbd>  <kbd><i>k</i></kbd> in Vim, add the following to your Visual Studio Code settings:
-
-```javascript
-/* disable Ctrl + k in Vim so you can use Ctrl + k in Visual Studio Code */
+```json
 "vim.handleKeys": {
-	"<C-k>": false
-}
+	"<C-p>": false,     // Quick file search
+	"<C-f>": false,     // Find in file
+	"<C-b>": false,     // Toggle sidebar
+	"<C-d>": false,     // Multi-cursor select
+	"<C-z>": false      // Undo
+},
 ```
+</details>
 
----
-
-### Vim Modes 
-
-- Normal mode, activated via <kbd><i>Esc</i></kbd> key
-- Insert mode, activated via <kbd><i> a</i></kbd> / <kbd><i> A</i></kbd> / <kbd><i> i</i></kbd> / <kbd><i> I</i></kbd> / <kbd><i> o</i></kbd> / <kbd><i>O</i></kbd> keys
-- 
-- Replace mode, activated via <kbd><i>R</i></kbd> key
-- Visual modes, for text selection. There are 3 visual modes
-	- standard visual mode, activated by <kbd><i>v</i></kbd> key, where you select code by characters
-	- visual line mode, activated by <kbd><i>V</i></kbd> key, where you select code by lines
-	- visual block mode, activated by <kbd><i>Ctrl</i></kbd>  <kbd><i>v</i></kbd>, where you text by blocks (rectangular area)
-	- <kbd><i>g</i></kbd> &rarr; <kbd><i>v</i></kbd>, where you recall the last visual mode on the same selected area
-- Search mode, activated via <kbd><i>/</i></kbd> (search forward), <kbd><i>?</i></kbd> (search backward); deactivate (to normal mode) via <kbd><i>/</i></kbd> &rarr; <kbd><i>Esc</i></kbd>
-- Command mode, activated via <kbd><i>:</i></kbd>, where you can perform a wide variety of commands.
+<details>
+<summary>2. Vim modes</summary>
+<ul>
+	<li>Normal mode: activated via <kbd><i>Esc</i></kbd> key</li>
+	<li>Insert mode, activated via <kbd><i> a</i></kbd> / <kbd><i> A</i></kbd> / <kbd><i> i</i></kbd> / <kbd><i> I</i></kbd> / <kbd><i> o</i></kbd> / <kbd><i>O</i></kbd> keys</li>
+	<li>Replace mode, activated via <kbd><i>R</i></kbd> key</li>
+	<li>Visual modes, for text selection. There are 3 visual modes
+		<ul>
+			<li>standard visual mode, activated by <kbd><i>v</i></kbd> key, where you select code by characters</li>
+			<li>visual line mode, activated by <kbd><i>V</i></kbd> key, where you select code by lines</li>
+			<li>visual block mode, activated by <kbd><i>Ctrl</i></kbd>  <kbd><i>v</i></kbd>, where you text by blocks (rectangular area)</li>
+			<li><kbd><i>g</i></kbd> &rarr; <kbd><i>v</i></kbd>, where you recall the last visual mode on the same selected area</li>
+		</ul>
+	</li>
+	<li>Search mode, activated via <kbd><i>/</i></kbd> (search forward), <kbd><i>?</i></kbd> (search backward); deactivate (to normal mode) via <kbd><i>/</i></kbd> &rarr; <kbd><i>Esc</i></kbd></li>
+	<li>Command mode, activated via <kbd><i>:</i></kbd>, where you can perform a wide variety of commands.</li>
+</ul>
   
 ---
 
@@ -40,10 +46,10 @@ Vim key bindings involving <mark>word</mark> &amp; <mark>WORD</mark>:
 - <kbd><i>w</i></kbd> / <kbd><i>W</i></kbd>: move forward by 1 <mark>word</mark> / <mark>WORD</mark>
 - <kbd><i>e</i></kbd> / <kbd><i>E</i></kbd>: move to the end of <mark>word</mark> / <mark>WORD</mark>
 - <kbd><i>b</i></kbd> / <kbd><i>B</i></kbd>: move backword by 1 <mark>word</mark> / <mark>WORD</mark>
+</details>
 
----
-
-### Vim Key Bindings
+<details>
+	<summary>3. Vim key bindings</summary>
 
 - Navigation
 	- <kbd><i>k</i></kbd> / <kbd><i>j</i></kbd> / <kbd><i>h</i></kbd> / <kbd><i>l</i></kbd>: equivalent to <kbd><i>&#708;</i></kbd> / <kbd><i>&#709;</i></kbd> / <kbd><i>&#706;</i></kbd> / <kbd><i>&#707;</i></kbd> but easier to access
@@ -90,9 +96,10 @@ Vim key bindings involving <mark>word</mark> &amp; <mark>WORD</mark>:
 	- Copy-paste between files
 		- Copy: <kbd><i>"</i></kbd><kbd><i>*</i></kbd><kbd><i>y</i></kbd>
 		- Paste: <kbd><i>"</i></kbd><kbd><i>*</i></kbd><kbd><i>p</i></kbd>
----
+</details>
 
-### Pattern Search and Substitution
+<details>
+	<summary>4. Pattern search and substitution</summary>
 
 - Pattern search
 	- <kbd><i>/</i></kbd> &rarr; <kbd><i>PATTERN</i></kbd>: search for pattern forward
@@ -114,10 +121,10 @@ Vim key bindings involving <mark>word</mark> &amp; <mark>WORD</mark>:
 	- a: substitute all remaining
 	- q: quit substitution
 	- l: replace current and quit
+</details>
 
-___
-
-### Marks
+<details>
+	<summary>5. Marks</summary>
 
 Marks allow a user to save current selection.
 
@@ -138,10 +145,10 @@ Marks allow a user to save current selection.
 	- <code>:delmarks aB</code>: delete marks a, B
 	- <code>:delmarks a-e</code>: delete marks a, b, c, d, e
 	- <code>:delmarks!</code>: delete marks a&ndash;z (marks in other file buffers won't be affected)
----
+</details>
 
-### Macros
-
+<details>
+	<summary>6. Macros</summary>
 Vim plugin in Visual Studio Code does not yet offer full macro functionalities of vanilla Vim.
 
 - To record a macro, press <kbd><i>q</i></kbd> plus a lowercase letter (e.g. <kbd><i>a</i></kbd>), then perform some operations such as appending text.
@@ -158,11 +165,10 @@ A slightly inconvenint workaround is to append command **j** (next line) to your
 Code above executes the macro stored in register **a** from the current line and the subsequent lines 10 times. 
 
 Alternatively, a simpler solution is to use visual block mode to perform [multiline editing under visual mode](#visual-mode). 
+</details>
 
-___
-
-### Command Mode
-
+<details>
+	<summary>7. Command mode</summary>
 In addition to commands covered already, below are a list of file/buffer manipulation commands:
 
 - <code>:q</code>: close current buffer
@@ -172,10 +178,11 @@ In addition to commands covered already, below are a list of file/buffer manipul
 - <code>:qa!</code>: close all buffers without saving
 - <code>:wqa</code>: save all buffers and close
 - <code>:e!</code>: discard buffer and reopen file from disk
+</details>
 
----
+<details>
+	<summary>8. Viewport</summary>
 
-### Viewport
 - <kbd><i>Ctrl</i></kbd><kbd><i>w</i></kbd> &rarr; <kbd><i>v</i></kbd>: split screen vertically (equivalent to :vsp under command mode)
 - <kbd><i>Ctrl</i></kbd><kbd><i>w</i></kbd> &rarr; <kbd><i>s</i></kbd>: split screen horizontally
 - <kbd><i>Ctrl</i></kbd><kbd><i>w</i></kbd> &rarr; <kbd><i>Ctrl</i></kbd><kbd><i>w</i></kbd>: split screen horizontally
@@ -183,9 +190,10 @@ In addition to commands covered already, below are a list of file/buffer manipul
 - <kbd><i>Ctrl</i></kbd><kbd><i>w</i></kbd> &rarr; <kbd><i>o</i></kbd>: close all but current tab
 - <kbd><i>Ctrl</i></kbd><kbd><i>w</i></kbd> &rarr; <kbd><i>\=</i></kbd>: resize viewports to be of equal size
 - <kbd><i>Ctrl</i></kbd><kbd><i>w</i></kbd> &rarr; <kbd><i>h</i></kbd><kbd><i>l</i></kbd><kbd><i>j</i></kbd><kbd><i>k</i></kbd>: navigate viewports 
----
+</details>
 
-### Visual Mode
+<details>
+	<summary>Visual mode</summary>
 
 - Key bindings
 	- <kbd><i>u</i></kbd> / <kbd><i>U</i></kbd>: to lower/upper case
@@ -203,3 +211,5 @@ In addition to commands covered already, below are a list of file/buffer manipul
 	2. Move cursor on letter '1' of the 2nd line
 	3. <kbd><i>Ctrl</i></kbd><kbd><i>v</i></kbd> &rarr; <kbd><i>4</i></kbd> &rarr; <kbd><i>j</i></kbd> to select all lines except line 1
 	4. <kbd><i>g</i></kbd> &rarr; <kbd><i>Ctrl</i></kbd><kbd><i>a</i></kbd> to increment all numbers
+</details>
+
