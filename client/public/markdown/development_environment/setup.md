@@ -1,4 +1,4 @@
-# Setting up development environment
+# Installing software on your system
 
 Installing software on your system can be easily accomplished following instructions from an AI assistant such as chatgpt or copilot.
 
