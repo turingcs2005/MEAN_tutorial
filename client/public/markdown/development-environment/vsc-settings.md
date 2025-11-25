@@ -9,6 +9,7 @@ Use <kbd><i>Ctrl</i></kbd> + <kbd><i>Shift</i></kbd> + <kbd><i>p</i></kbd> and s
     // The settings below prevent hot-key conflicts between Vim and VS Code. Remove them if you do not use Vim.
     "vim.handleKeys": {
         "<C-p>": false,     // Quick file search
+        "<C-k>": false,     // Toggle zen mode Ctrl K Z
         "<C-f>": false,     // Find in file
         "<C-b>": false,     // Toggle sidebar
         "<C-d>": false,     // Multi-cursor select

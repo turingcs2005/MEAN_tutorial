@@ -5,4 +5,5 @@ export const toolingRoutes: Routes = [
     { path: 'nvm', loadComponent: () => import('./nvm/nvm').then(m => m.Nvm) },
     { path: 'vim', loadComponent: () => import('./vim/vim').then(m => m.Vim) },
     { path: 'git', loadComponent: () => import('./git/git').then(m => m.Git) },
+    { path: 'vsc-keyboard-shortcuts', loadComponent: () => import('./vsc-keyboard-shortcuts/vsc-keyboard-shortcuts').then(m => m.VscKeyboardShortcuts) },
 ];
