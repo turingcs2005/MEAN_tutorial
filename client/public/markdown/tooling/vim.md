@@ -1,5 +1,5 @@
 # Vim Editor
-
+___
 > Whether to use Vim is completely up to you. It takes months of practice to develop muscle memory. Experienced Vim users edit source code with improved efficiency and precision. With the rise of AI, Vim's advantage has diminished, as AI can handle repetitive and routine code editing far faster than Vim. For simple code editing, Vim can still be faster than writing a request and waiting for AI to process it.
 
 ___

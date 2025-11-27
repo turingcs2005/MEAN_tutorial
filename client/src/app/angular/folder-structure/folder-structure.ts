@@ -2,12 +2,12 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { toolsModules } from '../../shared/tools';
 
 @Component({
-  selector: 'app-markdown',
+  selector: 'app-folder-structure',
+  templateUrl: './folder-structure.html',
   imports: [...toolsModules],
-  templateUrl: './markdown.html',
-  styleUrl: './markdown.scss',
+  styleUrl: './folder-structure.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Markdown {
+export class FolderStructure {
 
 }

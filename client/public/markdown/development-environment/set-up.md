@@ -1,5 +1,5 @@
 # Installing software on your system
-
+___
 Installing software on your system can be easily accomplished following instructions from an AI assistant such as chatgpt or copilot.
 
 1. Visual Studio Code (VSC) and plugins

@@ -1,5 +1,5 @@
 # AI-assisted coding
-
+___
 AI can help you write code significantly faster and more efficiently. Modern coding assistants integrate directly into your editor and can accelerate development in several ways:
 - Smart code suggestions: AI can predict your next lines of code and offer completions that you can accept with a single keystroke (such as pressing Tab).
 - Code generation from comments: You can describe what you need in a comment, and the AI will generate the corresponding code automatically.

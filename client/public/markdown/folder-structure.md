@@ -1,0 +1,42 @@
+# MEAN project folder structure
+___
+```text
+📁 project
+├── 📄 .gitignore
+├── 📁 .git
+├── 📄 Dockerfile
+├── 📄 .dockerignore
+├── 📁 client
+│   ├── 📁 public
+│   │   ├── 📁 fonts
+│   │   └── 📁 markdown
+│   └── 📁 src
+│       └── 📁 app
+│           ├── 🟦 app.routes.ts
+│           ├── 🟦 app.config.ts
+│           ├── 📁 shared
+│           │   ├── 🟦 material.ts
+│           │   └── 🟦 tools.ts
+│           ├── 📁 welcome
+│           │   ├── 📁 home
+│           │   └── 📁 top-bar
+│           ├── 📁 feature1
+│           │   ├── 📁 component1
+│           │   ├── 📁 component2
+│           │   └── 🟦 feature1.routes.ts
+│           ├── 📁 feature2
+│           ├── 📁 feature3
+│           └── 📁 services
+│               └── 🟦 crud.ts
+└── 📁 server
+    ├── 📁 src
+    │   ├── 📁 controlles
+    │   ├── 📁 models
+    │   ├── 📁 routes
+    │   └── 🟦 app.mts
+    ├── 📁 dist
+    ├── 📁 angular
+    │   └── 📁 browser
+    └── 📄 .env
+
+```

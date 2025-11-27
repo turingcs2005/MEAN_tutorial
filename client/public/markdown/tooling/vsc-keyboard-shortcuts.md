@@ -1,5 +1,5 @@
 # Visual Studio Code Keyboard Shortcuts
-
+___
 - <kbd><i>Ctrl</i></kbd> <kbd><i>~</i></kbd>: toggle terminal
 - <kbd><i>Ctrl</i></kbd> <kbd><i>Shift</i></kbd> <kbd><i>~</i></kbd>: add an additional terminal window
 - <kbd><i>Ctrl</i></kbd> <kbd><i>,</i></kbd>: settngs (quick access)

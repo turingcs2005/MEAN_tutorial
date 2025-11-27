@@ -1,5 +1,5 @@
 # Node version manager
-
+___
 nvm allows a user to manage multiple local node.js environment under user account.
 
 - Use a specific version of local node.js environment, e.g. 16

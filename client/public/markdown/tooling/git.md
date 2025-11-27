@@ -1,4 +1,5 @@
 # Basic Git commands
+___
 - clone an existing repository
 <pre class="command-line"><code>git clone xxxx</code></pre>
 - add a remote repo (origin)

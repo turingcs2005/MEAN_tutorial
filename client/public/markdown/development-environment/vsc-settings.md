@@ -1,3 +1,5 @@
+# Visual Studio Code user settings
+___
 Use <kbd><i>Ctrl</i></kbd> + <kbd><i>Shift</i></kbd> + <kbd><i>p</i></kbd> and select 'Preferences: Open User Settings (JSON)'. Paste code below. 
 
 ```json

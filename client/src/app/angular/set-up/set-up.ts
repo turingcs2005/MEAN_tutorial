@@ -1,8 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { MarkdownComponent } from "ngx-markdown";
 
 @Component({
   selector: 'app-set-up',
-  imports: [],
+  imports: [MarkdownComponent],
   templateUrl: './set-up.html',
   styleUrl: './set-up.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
