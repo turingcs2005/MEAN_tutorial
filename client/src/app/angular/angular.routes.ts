@@ -5,4 +5,7 @@ export const angularRoutes: Routes = [
     { path: 'folder-structure', loadComponent: () => import('./folder-structure/folder-structure').then(m => m.FolderStructure) },
     { path: 'best-practices', loadComponent: () => import('./best-practices/best-practices').then(m => m.BestPractices) },
     { path: 'markdown', loadComponent: () => import('./markdown/markdown').then(m => m.Markdown) },
+    { path: 'routing', loadComponent: () => import('./routing/routing').then(m => m.Routing) },
+    { path: 'services', loadComponent: () => import('./services/services').then(m => m.Services) },
+    { path: 'utility-modules', loadComponent: () => import('./utility-modules/utility-modules').then(m => m.UtilityModules) },
 ];
