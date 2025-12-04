@@ -8,4 +8,5 @@ export const angularRoutes: Routes = [
     { path: 'routing', loadComponent: () => import('./routing/routing').then(m => m.Routing) },
     { path: 'services', loadComponent: () => import('./services/services').then(m => m.Services) },
     { path: 'utility-modules', loadComponent: () => import('./utility-modules/utility-modules').then(m => m.UtilityModules) },
+    { path: 'environments', loadComponent: () => import('./environments/environments').then(m => m.Environments) },
 ];
