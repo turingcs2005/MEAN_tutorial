@@ -6,8 +6,8 @@ import { toolsModules } from '../../shared/tools';
   selector: 'app-set-up',
   imports: [...toolsModules],
   providers: [Crud],
-  templateUrl: './set-up.html',
-  styleUrl: './set-up.scss',
+  templateUrl: './setup.html',
+  styleUrl: './setup.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SetUp {}

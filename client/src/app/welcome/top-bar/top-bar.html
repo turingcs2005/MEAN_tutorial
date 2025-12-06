@@ -11,6 +11,7 @@
     <button mat-menu-item [matMenuTriggerFor]="developmentEnvironmentMenu">Getting started</button>
     <button mat-menu-item [matMenuTriggerFor]="toolingMenu">Tooling</button>
     <button mat-menu-item [matMenuTriggerFor]="angularMenu">Angular</button>
+    <button mat-menu-item [matMenuTriggerFor]="nodeMenu">Node</button>
 </mat-menu>
 
 <mat-menu #developmentEnvironmentMenu="matMenu">
@@ -30,11 +31,15 @@
 <mat-menu #angularMenu="matMenu">
     <button mat-menu-item routerLink="/angular/best-practices">Best Practices</button>
     <button mat-menu-item routerLink="/angular/folder-structure">Folder Structure</button>
-    <button mat-menu-item routerLink="/angular/set-up">Setup</button>
+    <button mat-menu-item routerLink="/angular/setup">Setup</button>
     <button mat-menu-item routerLink="/angular/utility-modules">Utility Modules</button>
     <button mat-menu-item routerLink="/angular/routing">Routing</button>
     <button mat-menu-item routerLink="/angular/services">Services</button>
     <button mat-menu-item routerLink="/angular/environments">Environments</button>
     <button mat-menu-item routerLink="/angular/markdown">Markdown</button>
     <button mat-menu-item routerLink="/angular/icons">Icons</button>
+</mat-menu>
+
+<mat-menu #nodeMenu="matMenu">
+    <button mat-menu-item routerLink="/node/setup">Setup</button>
 </mat-menu>
