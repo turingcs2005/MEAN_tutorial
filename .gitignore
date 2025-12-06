@@ -36,7 +36,6 @@ Thumbs.db
 /client/.env
 /client/**/*.tsbuildinfo
 /client/.sass-cache
-
 # Angular build artifacts
 /client/**/*.js.map
 /client/**/*.js

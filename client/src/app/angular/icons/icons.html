@@ -1,0 +1,40 @@
+<h1>Icons</h1>
+<mat-divider></mat-divider>
+
+<p>You can search for Material icons and symbols here at <a href="https://fonts.google.com/icons" target="_blank">Google</a>. 
+    You may also ask AI to make icon/symbol suggestions for your project.</p>
+
+<h2>1. Material Icons and Material Symbols</h2>
+
+<p>Classic Material Icons are a subset of Material icons and Symbols. By default, the index.html file should have already imported them.</p>
+
+<markdown>
+```html
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
+</markdown>
+
+<p>If classic Material icons aren't enough and you want to use Google's new Material symbols, import them by adding a 2nd line to your index.html:</p>
+
+<markdown>
+```html
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+```
+</markdown>
+
+<p>Using classic Material icons or the new Material symbols in your Angular app is straightforward:</p>
+<div><mat-icon>home</mat-icon> classic Material icon for 'home'. <code>&lt;mat-icon&gt;home&lt;/mat-icon&gt;</code></div>
+<div><mat-icon fontSet="material-symbols-outlined">home</mat-icon> new Material symbol for 'home'. <code>&lt;mat-icon fontSet="material-symbols-outlined"&gt;home&lt;/mat-icon&gt;</code></div>
+
+<h2>2. Custom SVG Icons</h2>
+
+<p>Often we need custom icons for branding. Angular Material allows you to register custom SVG icons and use them just like the built-in icons.</p>
+<ol>
+    <li>Place your custom SVG file (e.g. lobster.svg) in /public/icons/ directory (or whatever directory you prefer)</li>
+    <li>Import MatIconModule (which you should have already done in your component, as it is needed for Material icons and symbols)</li>
+    <li>Register your custom SVG icon in your component's TypeScript file using MatIconRegistry and DomSanitizer.</li>
+     <li>Use the registered icon in your template with the <code>svgIcon</code> attribute.</li>
+</ol>
+<mat-icon svgIcon="lobster"></mat-icon> Custom SVG icon for 'lobster'. <code>&lt;mat-icon svgIcon="lobster"&gt;&lt;/mat-icon&gt;</code>
+
+<markdown src="/markdown/angular/icons.md"></markdown>
