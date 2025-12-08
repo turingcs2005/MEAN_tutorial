@@ -40,11 +40,13 @@
 			"moduleResolution": "nodenext", // "moduleResolution" option determines how Node.js will find imported modules.
 			"target": "esnext", // "target" option determines the version of JavaScript to which your TypeScript source code will be compiled.
 			"sourceMap": true, // "sourceMap" is set to true so the compiled JavaScript code are mapped back to TypeScript, which helps us with debugging.
+		    "rootDir": "./src",
+		    "outDir": "./dist"
 		},
 		"include": ["src/**/*"], // tells compiler where to find TypeScript source code
 	}
 	```
-	Please make sure that your folder structure is correct, i.e. under your server/ directory, you have src/ for TypeScript source code and dist/ for compiled JavaScript code. The defaut rootDir and outDir are './src' and './dist', respectively and they are commented out.
+	Ensure that your folder structure is correct (Under your server/ directory, you have src/ for TypeScript source code and dist/ for compiled JavaScript code). The defaut rootDir and outDir are './src' and './dist', respectively, but they are commented out. Uncomment them.
 
 4. A sample /src/app.mts file 
 ```typescript
