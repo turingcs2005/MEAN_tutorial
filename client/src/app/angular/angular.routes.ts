@@ -10,4 +10,5 @@ export const angularRoutes: Routes = [
     { path: 'utility-modules', loadComponent: () => import('./utility-modules/utility-modules').then(m => m.UtilityModules) },
     { path: 'environments', loadComponent: () => import('./environments/environments').then(m => m.Environments) },
     { path: 'icons', loadComponent: () => import('./icons/icons').then(m => m.Icons) },
+    { path: 'custom-color-theme', loadComponent: () => import('./custom-color-theme/custom-color-theme').then(m => m.CustomColorTheme) },
 ];
